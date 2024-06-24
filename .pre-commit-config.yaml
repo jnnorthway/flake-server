@@ -27,12 +27,12 @@ repos:
     rev: 19.3b0
     hooks:
       - id: black
-  - repo: https://gitlab.com/pycqa/flake8
-    rev: 3.7.7
+  - repo: https://github.com/PyCQA/flake8
+    rev: 5.0.4
     hooks:
       - id: flake8
         args:
-          - --ignore=W503,E501,E203
+          - --ignore=W503,W605,E501,E203
           - --max-line-length=89
   - repo: https://github.com/prettier/prettier
     rev: "2.0.5"
